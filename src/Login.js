@@ -1,4 +1,5 @@
 import react from 'react';
+import './App.css';
 
 const Login = (props) => {
     const {loginGoogle,email, setEmail, password, setPassword, handleLogin, handleSignup, hasAccount, sethasAccount, emailError, passwordError } = props;
@@ -25,13 +26,13 @@ const Login = (props) => {
                 {hasAccount ? (
                     <>
                     <button onClick={handleLogin}>SignIn</button>
-                    <p>Don't have an account ? <span onClick={()=>sethasAccount(!hasAccount)}>Sign Up</span></p>
+                    <p>Don't have an account ? <span className="login" onClick={()=>sethasAccount(!hasAccount)}>Sign Up</span></p>
                     <button onClick={loginGoogle}>Sign in with Google</button>
                     </>
                 ) : (
                     <>
                     <button onClick={handleSignup}>SignUp</button>
-                    <p>Have an account? <span onClick={()=>sethasAccount(!hasAccount)}>Sign in</span></p>
+                    <p>Have an account? <span className="login" onClick={()=>sethasAccount(!hasAccount)}>Sign in</span></p>
                     </>
                 )}
             </div>
