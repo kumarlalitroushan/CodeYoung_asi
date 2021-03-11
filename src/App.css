@@ -1,0 +1,30 @@
+body{
+    margin:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    background: black;
+    color: silver;
+}
+.container{
+    padding: 12px;
+}
+.heading{
+    color: silver;
+}
+.inp{
+    border: 2px silver solid;
+    background: black;
+    color: silver;
+    margin: 10px;
+}
+.select{
+    border: 2px silver solid;
+    background:black;
+    color: silver;
+}
+.equals{
+    font-size: 3rem;
+}
